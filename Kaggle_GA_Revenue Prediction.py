@@ -10,6 +10,7 @@ Created on Sun Oct 14 20:31:33 2018
 import pandas as pd
 
 ## Data pre-processing
-ga_df=pd.read_csv("D:\Dropbox\Hackathons\kaggle\Google Analytics Customer Revenue Prediction_All\train.csv")
-
+ga_df=pd.read_csv("D:/Dropbox/Hackathons/kaggle/Google Analytics Customer Revenue Prediction_All/train.csv",low_memory=False)
+print (ga_df.describe(include="all"));
+print (ga_df.info());
 
